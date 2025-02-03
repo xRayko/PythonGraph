@@ -4,8 +4,8 @@ requires-python = ">= 3.11.5"
 readme = "README.md"
 
 dependencies = [
-  "matplotlib[httpx]>3.10.0",
-    "numpy[httpx]>2.2.2",
+  "matplotlib >3.10.0",
+    "numpy >2.2.2",
 ]
 
 authors = [
