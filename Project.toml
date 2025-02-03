@@ -1,0 +1,16 @@
+[project]
+name = "Graph.py"
+requires-python = ">= 3.11.5"
+readme = "README.md"
+
+dependencies = [
+  "matplotlib[httpx]>3.10.0",
+    "numpy[httpx]>2.2.2",
+]
+
+authors = [
+  {name = "Alexandre Meunier", email = "alexandre.meunier1506@gmail.com"},
+]
+maintainers = [
+  {name = "Alexandre Meunier", email = "alexandre.meunier1506@gmail.com"}
+]
