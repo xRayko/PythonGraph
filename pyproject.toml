@@ -13,3 +13,5 @@ authors = [
 maintainers = [
   {name = "Alexandre Meunier", email = "alexandre.meunier1506@gmail.com"}
 ]
+[project.optional-dependencies]
+test = ['pytest', 'ruff']

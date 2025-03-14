@@ -28,4 +28,4 @@ jobs:
 
     - name: Run tests
       run: |
-        pytest  # Exécute pytest pour lancer tes tests
+        python -m pytest  # Exécute pytest pour lancer tes tests
