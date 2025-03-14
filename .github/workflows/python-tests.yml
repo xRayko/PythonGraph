@@ -1,0 +1,31 @@
+name: Python CI
+
+on:
+  push:
+    branches:
+      - main  # Exécute les tests lors des pushs sur la branche principale (ou la branche par défaut)
+  pull_request:
+    branches:
+      - main  # Exécute les tests lors des pull requests vers la branche principale
+
+jobs:
+  test:
+    runs-on: ubuntu-latest  # Utilise une machine virtuelle Ubuntu pour exécuter les tests
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2  # Récupère le code source du repository
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.8'  # Définit la version de Python à utiliser (ajustez selon votre besoin)
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt  # Installe les dépendances depuis le fichier requirements.txt
+
+    - name: Run tests
+      run: |
+        pytest  # Exécute pytest pour lancer vos tests

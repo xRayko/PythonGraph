@@ -1,0 +1,23 @@
+Metadata-Version: 2.2
+Name: Graph.py
+Version: 2020.0.0
+Author-email: Alexandre Meunier <alexandre.meunier1506@gmail.com>
+Maintainer-email: Alexandre Meunier <alexandre.meunier1506@gmail.com>
+Requires-Python: >=3.11.5
+Description-Content-Type: text/markdown
+Requires-Dist: matplotlib>=3.10.0
+Requires-Dist: numpy>=2.2.2
+
+
+
+# PythonGraph
+Lancement dufichier Projet.toml pour la récupération des dépendances :
+````bash
+pip install .
+````
+# URL
+Lancement du projet :
+````bash
+python Graph.py
+````
+
